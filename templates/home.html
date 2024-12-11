@@ -20,7 +20,8 @@
     <div class="container">
     <h1 class="text-center mt-2 mb-4">
      {{company_name}} Careers</h1>
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur
+    <div class="row" style="margin-bottom: 16px;">
+      <div class="col-md-6"><p class="lead">Lorem ipsum dolor sit amet, consectetur
     adtplsc Ing ell t, sed do eiusmod tempor incidtdunt ut
     labore et dolore magna aliqua. Ut enun ad minim
     veniam, quis nostrud exercitation ullamco 1 aborts
@@ -28,15 +29,16 @@
     trure dolor In reprehendertt tn voluptate vetit esse
     cillum dolore eu fuglat nulla partatur. Excepteur
     sint occaecat cupidatat non proident, sunt in culpa
-    qut off deserunt mollit anim id est laborum.</p>
+    qut off deserunt mollit anim id est laborum.</p></div>
+    <div class="d-none d-md-block col-md-6"><img src="../static/people.jpg" style="height: 320px; border-radius: 4px;"></div>
+  </div>
     <h2 class="text-center mt-2 mb-4">Job Openings</h2>
     <div>
       {% for job in jobs %}
       {% include 'jobitem.html' %}
       {% endfor %}
       <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2022, Jovian</p>
+        <a href="mailto:sbapan41@gmail.com?subject=Questions%20about%20job%20opening&body=My%20Name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20Questions%3A%20%3Cyour%20questions%20here%3E%0D%0A" class="btn btn-primary btn-lg" type="button">Contact Us</a>
       </div>
   </div>
       {% include 'footer.html' %}
